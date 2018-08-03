@@ -1,5 +1,5 @@
 function sidebar(){
-	console.log("ahihi");
+	console.log("ahihi");	
 	$('.sidebar-wrapper').addClass('keo')
 	return false;
 }
