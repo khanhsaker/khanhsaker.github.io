@@ -94,30 +94,93 @@
 /* End for sidebar */
 /* For Infor */
 .info{
-	background-color: #fff6f6;
+
 }
 
-/* For Footer */
-footer{
-	background-color: #89a4c7;
-	height: 300px;
+
+/* FOr AboutMe */
+.aboutme>div{
+	height: 100%;
+	padding-top: 30px;
+}
+.aboutme h1{
+	margin-top: 80px;
 }
 
+/* For Contact Form */
+.content-section-heading h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+section {
+    display: block;
+}
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+
+.content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
 /* For BackTop */
 .backtop{
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	opacity: 0.5;
 	position: fixed;
 	bottom: 15px;
 	right: 15px;
 }
+/* For Footer */
 
-/* FOr AboutMe */
-.aboutme>div{
-	height: 700px;
-	padding-top: 50px;
+footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
-.aboutme h1{
-	margin-top: 200px;
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer.footer .social-link:hover {
+    background-color: #155d74;
+    text-decoration: none;
+}
+footer.footer .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: #1d809f;
+    transition: background-color .15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+a:active, a:focus, a:hover {
+    color: #155d74;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.text-white {
+    color: #fff!important;
+}
+footer .social-link>i{
+	font-size: 35px;
 }

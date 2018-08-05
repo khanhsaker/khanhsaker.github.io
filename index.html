@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
-	<div id="page-top">
+<body id="page-top">
 
     <!-- carousel -->
     <div id="demo" class="carousel slide" data-ride="carousel">
@@ -88,54 +87,148 @@
     </div>
 
 	<!-- end Carousel -->
-		<!-- Menu Toggle -->
-		<button class="menu-toggle rounded btn-secondary text-center" onclick="sidebar()">
-			<i class="fa fa-bars" style="font-size: 30px;margin-top: 3px;"></i>
-		</button>
-		<!-- End Menu Toggle -->
-		
-		<div class="info" style="height: 1000px">
-			<div class="container">
-				<div class="aboutme row">
-					<div class="col-6 text-center">
-						<h1>Tôi là Nguyễn Duy Khánh</h1>
-						<p>Hiện tôi đang là sinh viên. Tôi yêu lập trình, thích tìm hiểu các công nghệ mới. Tôi đang tập trung phát triển và thiết kế web, các ứng dụng dựa trên nền tảng web</p>
+	<!-- Menu Toggle -->
+	<button class="menu-toggle rounded btn-secondary text-center" onclick="sidebar()">
+		<i class="fa fa-bars" style="font-size: 30px;margin-top: 3px;"></i>
+	</button>
+	<!-- End Menu Toggle -->
+	<!-- Contact Info -->
+	<div class="info bg-info" style="height: 560px">
+		<div class="container">
+			<div class="aboutme row">
+				<div class="col-6 text-center">
+					<h1 class="text-white">About me</h1>
+					<p class="text-white text-justify">Hiện tôi đang là sinh viên. Tôi yêu lập trình, thích tìm hiểu các công nghệ mới. Tôi đang tập trung phát triển và thiết kế web, các ứng dụng dựa trên nền tảng web.</p>
+					<div class="col-md-12 mb-5 mb-lg-0 text-dark bg-light text-left">
+						<h3 class="text-center mt-3" style="font-weight: bold;">Contact Info</h3>
+						<div class="p-2" style="font-size: 1.2rem; ">
+							<table style="width: 100%">
+								<tbody><tr>
+											<td class="d-none d-sm-table-cell"><b>Fullname: </b></td>
+											<td>Nguyễn Duy Khánh (Duy-Khanh Nguyen)</td>
+										</tr>
+										<tr>
+											<td class="d-none d-sm-table-cell"><b>Gmail: </b></td>
+											<td>
+											<a href="mailto:khanhsaker1997@gmail.com" target="_blank">
+											<span style="color:#5054B4">
+											<i class="fa fa-google" aria-hidden="true"></i>
+											</span>
+										/khanhsaker1997@gmail.com</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="d-none d-sm-table-cell"><b>Facebook: </b></td>
+											<td>
+											<a href="https://facebook.com/khanhsakercsdn" target="_blank">
+											<span style="color:#5054B4">
+											<i class="fa fa-facebook-square" aria-hidden="true"></i>
+											</span>
+										/khanhsakercsdn</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="d-none d-sm-table-cell"><b>Github: </b></td>
+											<td><a href="https://github.com/khanhsaker97" target="_blank">
+											<span style="color:#444">
+											<i class="fa fa-github-square" aria-hidden="true"></i>
+											</span>
+											/khanhsaker97</a></td>
+										</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-					<div class="col-6 text-center">
-						<img src="img/aboutme1.jpg" alt="Ảnh Đi chơi Thác Giót - Sơn Động - Bắc Giang" class="rounded-circle" style="width: 500px;height: 500px;">
+				</div>
+				<div class="col-6 text-center">
+					<img src="img/aboutme1.jpg" alt="Ảnh Đi chơi Thác Giót - Sơn Động - Bắc Giang" class="rounded-circle" style="width: 500px;height: 500px;margin-left: 90px">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Contact Infor-->
+	<!-- For Contact Form -->
+	<section class="content-section" id="contact" style="height: 648px">
+		<div class="container">
+			<div class="content-section-heading text-center">
+				<h3 class="text-warning mb-0">Say hello to me</h3>
+				<h2 class="mb-5">Contact me</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div id="contact-form-wrapper">
+						<form id="contact-form" class="js-form form" method="post" action="/">
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea class="form-control" type="text" rows="3" id="contactform-message" name="message" tabindex="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="name">Your name</label>
+								<textarea class="form-control" type="text" rows="1" id="contactform-name" name="name" tabindex="1"></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" id="contact-form-submit" tabindex="5" class="btn btn-lg btn-info">
+								<span class="oi oi-envelope-closed"></span>
+								<span class="text">Send</span></button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- end Info -->
-		<footer>
-			<a class="backtop rounded btn-secondary text-center" href="#page-top">
-				<i class="fa fa-bars" style="font-size: 30px;margin-top: 10px;"></i>
-			</a>
-		</footer>
-		<!-- end Contact -->
-	</div>
-	
-	<!--Nav sidebar -->
-		<nav class="sidebar-wrapper bg-secondary">
-			<ul class="sidebar-nav">
-				<li class="sidebar-brand">
-					<a class="js-scroll-trigger" href="#" onclick="sidebarremove()">Menu</a>
+	</section>
+	<!-- End Contact Info -->
+	<!-- Footer -->
+
+
+
+	<footer class="footer text-center">
+		<div class="container">
+			<ul class="list-inline mb-5">
+				<li class="list-inline-item">
+					<a class="social-link rounded-circle text-white mr-3" href="https://facebook.com/khanhsakercsdn">
+						<i class="fa fa-facebook-square"></i>
+					</a>
 				</li>
-				<li class="sidebar-nav-item">
-					<a class="js-scroll-trigger" href="#">Home</a>
+				<li class="list-inline-item">
+					<a class="social-link rounded-circle text-white mr-3" href="mailto:khanhsaker1997@gmail.com">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</a>
 				</li>
-				<li class="sidebar-nav-item">
-					<a class="js-scroll-trigger" href="/articles/">My blog</a>
-				</li>
-				<li class="sidebar-nav-item">
-					<a class="js-scroll-trigger" href="#aboutme">About me</a>
-				</li>
-				<li class="sidebar-nav-item">
-					<a class="js-scroll-trigger" href="#contact">Contact</a>
+				<li class="list-inline-item">
+					<a class="social-link rounded-circle text-white mr-3" href="https://github.com/khanhsaker97">
+						<i class="fa fa-github-alt"></i>
+					</a>
 				</li>
 			</ul>
-		</nav>
+			<p class="text-muted small mb-0">Copyright © Khanhsaker (Duy-Khanh Nguyen)</p>
+		</div>
+
+		<a class="backtop rounded btn-secondary text-center" href="#page-top">
+			<i class="fa fa-arrow-circle-up" style="font-size: 30px;"></i>
+		</a>
+	</footer>
+	<!-- End Footer -->
+	<!--Nav sidebar -->
+	<nav class="sidebar-wrapper bg-secondary">
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<a class="js-scroll-trigger" href="#" onclick="sidebarremove()">Menu</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="#">Home</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="/articles/">My blog</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="#aboutme">About me</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</nav>
 		<!-- End Nav sidebar -->
 
 	<!-- Code JS -->
