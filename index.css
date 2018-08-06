@@ -66,11 +66,12 @@
 
 /* For sidebar */
 .sidebar-wrapper{
+	background-color: SlateBlue;
 	width: 250px;
 	position: fixed;
 	right: -250px;
 	height: 100%;
-	transition: right 1s;
+	transition: right 0.5s;
 	top: 0px;
 }
 .keo{
