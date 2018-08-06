@@ -8,11 +8,17 @@
 }
 
 .header>h1{
-	font-size: 400%;
+	font-size: 300%;
 	font-weight: bold;
 	font-style: italic;
 	margin-bottom: 100px;
 }
+@media screen and (max-width: 576px)
+.header>h1{
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+
 
 /* For I'm */
 .typed-cursor{
@@ -42,6 +48,8 @@
     transition: opacity .25s;
 }	
 /* End For I'm */
+
+
 
 /* For Follow */
 .social-link{
